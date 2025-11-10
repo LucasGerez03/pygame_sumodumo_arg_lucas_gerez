@@ -49,23 +49,23 @@ class Player:
     def move(self, keys):
         """Actualiza la dirección y posición del jugador basado en las teclas."""
         # 1. Determinar la dirección (prioriza vertical sobre horizontal para la imagen)
-        if keys[pygame.K_UP]:
+        if keys[pygame.K_UP] or keys[pygame.K_w]:
             self.direction = 'up'
-        elif keys[pygame.K_DOWN]:
+        elif keys[pygame.K_DOWN] or keys[pygame.K_s]:
             self.direction = 'down'
-        elif keys[pygame.K_LEFT]:
+        elif keys[pygame.K_LEFT] or keys[pygame.K_a]:
             self.direction = 'left'
-        elif keys[pygame.K_RIGHT]:
+        elif keys[pygame.K_RIGHT] or keys[pygame.K_d]:
             self.direction = 'right'
             
         # 2. Aplicar el movimiento (permite diagonales)
-        if keys[pygame.K_UP] and self.rect.top > 0: 
+        if (keys[pygame.K_UP] or keys[pygame.K_w]) and self.rect.top > 0: 
             self.rect.y -= self.vel
-        if keys[pygame.K_DOWN] and self.rect.bottom < ALTO: 
+        if (keys[pygame.K_DOWN] or keys[pygame.K_s]) and self.rect.bottom < ALTO: 
             self.rect.y += self.vel
-        if keys[pygame.K_LEFT] and self.rect.left > 0: 
+        if (keys[pygame.K_LEFT] or keys[pygame.K_a]) and self.rect.left > 0: 
             self.rect.x -= self.vel
-        if keys[pygame.K_RIGHT] and self.rect.right < ANCHO: 
+        if (keys[pygame.K_RIGHT] or keys[pygame.K_d]) and self.rect.right < ANCHO: 
             self.rect.x += self.vel
             
     def check_clown_truco(self, key_unicode):

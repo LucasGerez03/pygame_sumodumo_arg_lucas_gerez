@@ -82,8 +82,8 @@ try:
     MUSICA_JUEGO = "./assets/sounds/game_music.mp3"
     MUSICA_GAMEOVER = "./assets/sounds/game_over_sound.mp3"
     BOTON_SOUND.set_volume(0.5)
-    POWERUP_SOUND.set_volume(0.5)
-    HIT_SOUND.set_volume(0.5)
+    POWERUP_SOUND.set_volume(0.6)
+    HIT_SOUND.set_volume(0.6)
     CLOWN_SOUND.set_volume(0.5)
     
 except FileNotFoundError as e:
