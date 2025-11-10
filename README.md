@@ -2,17 +2,17 @@
 # pygame_Proyecto_Lucas_Gerez
 Presentando Videojuego en Pygame para la cursada del 2do cuatrimestre del 2025 de la materia "Programacion" 
 
-# **************************************
+**************************************
 #              HISTORIA
-# **************************************
+**************************************
 -Dumo es un Sumo de descendecia argentina, que trata de conectarse con sus raíces
 a la vez que practicar el deporte que tanto lo apasiona. No obstante, habrán 
 contrincantes que lo desafiarán en este largo camino, en el que Dumo está dispuesto
 a demostrar que él, es el mejor. (coronado de gloria)
 
-# **************************************
+**************************************
 # INTERACCION CON EL INTERFAZ DEL MENU
-# **************************************
+**************************************
 -El menu es interactivo unicamente con mouse, dando click izquierdo en cada 
 opcion seleccionada que desease (dificultad, puntajes, volumen, etc).
 
@@ -29,9 +29,9 @@ CONSEJO: Si bien el volumen es manipulable, es aconsejable tener  por lo menos a
 -Cuando la partida finalice deberás ingresar 3 iniciales (A - Z), caso contrario se puede
 seleccionar "VOLVER" para no guardar la puntuación.
 
-# **************************************
+**************************************
 #        JUGABILIDAD Y FINALIDAD
-# **************************************
+**************************************
 -El personaje principal (Sumo Dumo) se movera con las teclas direccionales (↑ ↓ → ←) o
 con las teclas  "WASD". CUALQUIER OTRA TECLA PARA LA JUGABILIDAD ES SOBRANTE.
 
@@ -46,9 +46,9 @@ que selecciones para jugar (elegí con responsabilidad).
 -Cerveza Quilmes: Regeneras +1 punto de Vida.
 -Empanada: Proporciona el estado de inmortalidad durante 5 segundos.
 
-# **************************************
+**************************************
 #              ¿CHEATS?
-# **************************************
+**************************************
 -Todo lo bueno tiene algo malo.
 -Manejá tus decisiones con sabiduría, atte: Lucas.
 C
@@ -57,7 +57,7 @@ O
 W
 N
 
-# ----------------------------------------
+----------------------------------------
 # Modulos Utilizados: 
 -pygame
 -random
