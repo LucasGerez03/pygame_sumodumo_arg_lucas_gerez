@@ -46,6 +46,7 @@ POWERUP_SPAWN_RATE = 420 # Frames
 
 try:
     FONDO_MENU_IMG = pygame.transform.scale(pygame.image.load("./assets/img/fondo_menu.png"), (ANCHO, ALTO)).convert()
+    FONDO_MENU_IMG_DIFUMINADO = pygame.transform.scale(pygame.image.load("./assets/img/fondo_menu_difuminado.png"), (ANCHO, ALTO)).convert()
     FONDO_JUEGO_IMG = pygame.transform.scale(pygame.image.load("./assets/img/fondo_juego.png"), (ANCHO, ALTO)).convert()
     FONDO_GAMEOVER_IMG = pygame.transform.scale(pygame.image.load("./assets/img/fondo_game_over.jpg"), (ANCHO, ALTO)).convert()
 

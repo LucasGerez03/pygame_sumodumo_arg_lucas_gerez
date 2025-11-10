@@ -32,7 +32,7 @@ class Boton:
                 return True
         return False
 
-# -----------------------------------------------------------------
+# ----------------------------------------------------------------
 # --- CLASE: Player ---
 # -----------------------------------------------------------------
 class Player:
@@ -75,8 +75,9 @@ class Player:
             if self.truco_input == "clown":
                 self.truco_activado = True
                 CLOWN_SOUND.play() #!se puede bugear el sonido
-                self.lives += 20 #!dar vidas extra por el truco (a que costo :v)
+                self.lives += 20 #?dar vidas extra por el truco 
                 self.rect = pygame.Rect(self.rect.x, self.rect.y, CLOWN_SIZE[0], CLOWN_SIZE[1]) # Ajustar hitbox al tamaño clown
+                self.vel += -3 #? Reducir velocidad al activar truco
                 
     def get_hit(self):
         """Procesa un golpe. Devuelve True si el jugador se queda sin vidas."""

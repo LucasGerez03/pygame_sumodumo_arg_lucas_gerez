@@ -61,7 +61,7 @@ class Game:
         # Reiniciar jugador
         self.player = Player(ANCHO // 2 - JUGADOR_SIZE[0] // 2, ALTO // 2 - JUGADOR_SIZE[1] // 2)
         self.player.lives = self.difficulty_settings['vidas']
-        self.player.vel = self.difficulty_settings['jugador_vel']
+        self.player.vel += self.difficulty_settings['jugador_vel'] 
         
         # Reiniciar listas y puntaje
         self.enemies = []
@@ -161,7 +161,7 @@ class Game:
                     self.start_new_game("dificil")
                 self.game_state = 'PLAYING'
 
-        self.screen.blit(FONDO_MENU_IMG, (0, 0))
+        self.screen.blit(FONDO_MENU_IMG_DIFUMINADO, (0, 0))
         mostrar_mensaje(self.screen, "Selecciona Dificultad", fuente_grande, BLANCO, (ANCHO // 2, 100))
         self.btn_facil.draw(self.screen)
         self.btn_normal.draw(self.screen)
@@ -184,7 +184,7 @@ class Game:
                     self.game_state = 'MENU'
                     return
 
-        self.screen.blit(FONDO_MENU_IMG, (0, 0)) 
+        self.screen.blit(FONDO_MENU_IMG_DIFUMINADO, (0, 0)) 
         mostrar_mensaje(self.screen, "Mejores Puntajes", fuente_grande, BLANCO, (ANCHO // 2, 80))
         
         if not puntajes_leidos:
