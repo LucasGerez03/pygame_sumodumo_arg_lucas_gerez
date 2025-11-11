@@ -188,7 +188,7 @@ class Game:
         mostrar_mensaje(self.screen, "Mejores Puntajes", fuente_grande, BLANCO, (ANCHO // 2, 80))
         
         if not puntajes_leidos:
-            mostrar_mensaje(self.screen, "Aún no hay puntajes guardados", fuente, GRIS, (ANCHO // 2, ALTO // 2))
+            mostrar_mensaje(self.screen, "Aun no hay puntajes guardados", fuente_puntaje, NEGRO, (ANCHO // 2, ALTO // 2))
         else:
             y_pos = 150 
             for i, (iniciales, puntaje) in enumerate(puntajes_leidos[:10]): 
